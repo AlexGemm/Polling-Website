@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+.header {
+    background-color: #152238;
+}
+
+body {
+    color: white;
+    font-family: 'Quicksand';
+    background-color: #1c2e4a;
+}
+
+form {
+    background-color: #1c2e4a;
+}

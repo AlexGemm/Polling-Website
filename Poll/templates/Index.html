@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="table-responsive w-25 mb-2">
+    <table class="table table-bordered text-light">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Rating</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row['Name'] }}</td>
+            <td>{{ row['Age'] }}</td>
+            <td>{{ row['Rating'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<p>{{num_of_ratings}} people were surveyed.</p>
+<p>The average rating is: {{average_rating}}</p>
+{% endblock %}

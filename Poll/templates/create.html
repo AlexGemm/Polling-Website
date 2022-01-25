@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Take the Survey</h1>
+<form method="post">
+
+    <label for="title">Name</label>
+    <br>
+    <input class="mb-2" type="text" name="Name"
+           placeholder="Post Name"
+           value="{{ request.form['Name'] }}" />
+    <br>
+
+    <!--Break-->
+
+    <label for="content">Age</label>
+    <br />
+    <input class="mb-2" type="text" name="Age"
+           placeholder="Post Age"
+           value="{{ request.form['Age'] }}" />
+    <br />
+
+    <!--Break-->
+
+    <label for="content">Your Rating</label>
+    <br />
+    <input class="mb-2" type="text" name="Rating"
+           placeholder="Post Rating"
+           value="{{ request.form['Rating'] }}" />
+    <br>
+
+    <!--Break-->
+
+    <button class="btn btn-secondary mt-2" type="submit">Submit</button>
+
+</form>
+{% endblock %}
